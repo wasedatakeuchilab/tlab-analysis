@@ -54,5 +54,5 @@ jobs:
         with:
           python-version: '3.12'
       - name: Run pre-commit-ci-lite
-        uses: pre-commit-ci/lite-action@v1.0.3
+        uses: pre-commit-ci/lite-action@v1.1.0
         if: always()
