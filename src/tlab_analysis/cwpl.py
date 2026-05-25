@@ -204,9 +204,9 @@ class CWPLData:
         A series of grating in 10 × nanometer.
         """
         column_name = "grating"
-        assert (
-            column_name in self.df.columns
-        ), f"The column named `{column_name}` doesn't exist in CWPLData.df"
+        assert column_name in self.df.columns, (
+            f"The column named `{column_name}` doesn't exist in CWPLData.df"
+        )
         return self.df[column_name].astype(float)
 
     @property
@@ -215,9 +215,9 @@ class CWPLData:
         A series of intensity in arbitrary units.
         """
         column_name = "intensity"
-        assert (
-            column_name in self.df.columns
-        ), f"The column named `{column_name}` doesn't exist in CWPLData.df"
+        assert column_name in self.df.columns, (
+            f"The column named `{column_name}` doesn't exist in CWPLData.df"
+        )
         return self.df[column_name].astype(float)
 
     def to_raw_binary(self) -> bytes:
