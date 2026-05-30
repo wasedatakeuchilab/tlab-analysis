@@ -213,9 +213,9 @@ class TRPLData:
         A series of time in nanosecond.
         """
         column_name = "time"
-        assert (
-            column_name in self.df.columns
-        ), f"The column named `{column_name}` doesn't exist"
+        assert column_name in self.df.columns, (
+            f"The column named `{column_name}` doesn't exist"
+        )
         return self.df[column_name].astype(float)
 
     @property
@@ -224,9 +224,9 @@ class TRPLData:
         A series of wavelength in nanometer.
         """
         column_name = "wavelength"
-        assert (
-            column_name in self.df.columns
-        ), f"The column named `{column_name}` doesn't exist"
+        assert column_name in self.df.columns, (
+            f"The column named `{column_name}` doesn't exist"
+        )
         return self.df[column_name].astype(float)
 
     @property
@@ -235,9 +235,9 @@ class TRPLData:
         A series of intensity in arbitrary units.
         """
         column_name = "intensity"
-        assert (
-            column_name in self.df.columns
-        ), f"The column named `{column_name}` doesn't exist"
+        assert column_name in self.df.columns, (
+            f"The column named `{column_name}` doesn't exist"
+        )
         return self.df[column_name].astype(float)
 
     def to_streak_image(self) -> npt.NDArray[np.float64]:

@@ -1,7 +1,7 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
@@ -18,7 +18,7 @@ repos:
       - id: requirements-txt-fixer
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.7.2
+    rev: v0.15.14
     hooks:
       - id: ruff-format
         name: Format Python files
@@ -36,7 +36,7 @@ repos:
           - --sequence=4
           - --offset=2
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         name: Lint YAML files
@@ -44,7 +44,7 @@ repos:
           - --format=parsable
           - --config-data=relaxed
   - repo: https://github.com/maxwinterstein/shfmt-py
-    rev: v3.7.0.1
+    rev: v4.0.0
     hooks:
       - id: shfmt
         name: Format shell scripts
@@ -52,7 +52,7 @@ repos:
           - -w
           - -i=2
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.11.0.1
     hooks:
       - id: shellcheck
         name: Lint shell scripts
