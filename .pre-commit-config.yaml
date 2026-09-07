@@ -18,7 +18,7 @@ repos:
       - id: requirements-txt-fixer
       - id: trailing-whitespace
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.14
+    rev: v0.16.6
     hooks:
       - id: ruff-format
         name: Format Python files
@@ -44,7 +44,7 @@ repos:
           - --format=parsable
           - --config-data=relaxed
   - repo: https://github.com/maxwinterstein/shfmt-py
-    rev: v4.0.0
+    rev: v4.2.0
     hooks:
       - id: shfmt
         name: Format shell scripts
@@ -52,7 +52,7 @@ repos:
           - -w
           - -i=2
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.11.0.1
+    rev: v0.11.0.1-1
     hooks:
       - id: shellcheck
         name: Lint shell scripts
